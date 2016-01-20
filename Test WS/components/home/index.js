@@ -29,7 +29,7 @@ function loadNews()
             // OK funziona, ottimizzare per grandi vol. di dati || paginazione
             // Parametrizzare la URL con una variabile idUsuario
             read: {
-                url: "http://digiweb-online.com/ci/index.php/servizioweb-test",
+                url: "http://digiweb-online.com/ci/index.php/servizioweb.json",
                 dataType: "json"
             },
         },
