@@ -1,7 +1,34 @@
-<div data-role="view" data-title="Home View" data-layout="main" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow">
+<div data-role="view" data-title="Home View Test WS" data-layout="main-nonav" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow">
 
     <!-- START_CUSTOM_CODE_home -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                &nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <button type="button" onClick="loadNews();" class="btn btn-info">
+                    Load News
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+    
+    <div id="lstNews" class="container-fluid"></div>
+    
+    <script type="text/x-kendo-tmpl" id="tmpLstNews">
+            <div class="col-xs-12 ItemLstCliente">
+                <b>#:title#</b>                
+            </div>
+    </script>
+    
     <!-- END_CUSTOM_CODE_home -->
 </div>
